@@ -331,8 +331,8 @@ let tek = `✧────···[ Dashboard ]···────✧
 ┬
 │${emot} 「 Hai Kak👋 」
 ├❖ 「 ${conn.getName(m.sender)} 」
-├❖  Bagaimana Harimu? 😄
-├❖  Terima Kasih Telah Menggunakan Bot Kami
+├❖  How was your day?  😄
+├❖  JAI SHREE RAM ♥️🚩
 │
 ├━━━━━━━━━━━━━━━━┈─⋆
 │  「 *U s e r  I n f o 克* 」
@@ -350,7 +350,7 @@ let tek = `✧────···[ Dashboard ]···────✧
 │
 ├━━━━━━━━━━━━━━━━┈─⋆
 │  「 *I n f o   B o t 比* 」
-│${emot} Aktif selama ${mpt}
+│${emot} Active during ${mpt}
 │${emot} Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
 │${emot} Prefix : [ ${_p} ]
 │${emot} *${Object.keys(global.db.data.users).length}* Pengguna
@@ -359,7 +359,7 @@ let tek = `✧────···[ Dashboard ]···────✧
 │
 ├━━━━━━━━━━━━━━━━┈─⋆
 │
-│ ▸ *Sumber :* YouTube WH-MODS-DEV
+│ ▸ *Source :* YouTube.com
 │ ▸ *ᴀᴜᴛʜᴏʀ :* ${nameown}
 ┴ ▸ *ᴏᴡɴᴇʀ :* ${nameown}
 ✧
@@ -630,7 +630,7 @@ const listMessage = {
                 {
                     urlButton: {
                         displayText: `${namebot}`,
-                        url: 'https://github.com/WH-MODS-BOT/'
+                        url: 'https://github.com/pratap0707'
                     }
                 },
                 {
@@ -695,7 +695,7 @@ const listMessage = {
     throw e
   }
 }
-handler.help = ['menu', 'help', '?']
+handler.help = ['menu', 'help', '?','.']
 handler.tags = ['main']
 handler.command = /^(menu|help|\?)$/i
 
@@ -726,22 +726,22 @@ function clockStringP(ms) {
   let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000) % 24
   let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
-  return [ye, ' *Years 🗓️*\n',  mo, ' *Month 🌙*\n', d, ' *Days ☀️*\n', h, ' *Hours 🕐*\n', m, ' *Minute ⏰*\n', s, ' *Second ⏱️*'].map(v => v.toString().padStart(2, 0)).join('')
+  return [ye, ' *Years 🗓️*\n',  mo, ' *Night 🌙*\n', d, ' *Days ☀️*\n', h, ' *Hours 🕐*\n', m, ' *Minute ⏰*\n', s, ' *Second ⏱️*'].map(v => v.toString().padStart(2, 0)).join('')
 }
 function ucapan() {
   const time = moment.tz('Asia/Jakarta').format('HH')
   let res = "Kok Belum Tidur Kak? 🥱"
   if (time >= 4) {
-    res = "Pagi Lord 🌄"
+    res = "Good Morning Cuteeee 🥰🌄"
   }
-  if (time >= 10) {
-    res = "Siang Lord ☀️"
+  if (time >= 12) {
+    res = "Good Afternoon Cuteeee 😘☀️"
   }
   if (time >= 15) {
-    res = "Sore Lord 🌇"
+    res = "Good Evening Baby 🤭🌇"
   }
-  if (time >= 18) {
-    res = "Malam Lord 🌙"
+  if (time >= 21) {
+    res = "Good Night Sweet Heart ♥️🌙"
   }
   return res
 }

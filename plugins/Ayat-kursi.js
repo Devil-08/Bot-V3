@@ -15,7 +15,7 @@ RAM RAM RAM RAM 😌
 }
 handler.help = ['ram']
 handler.tags = ['jai', 'limitmenu']
-handler.command = /^(ayatkursi)$/i
+handler.command = /^(sanatan)$/i
 handler.limit = true
 
 export default handler
